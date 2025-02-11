@@ -108,20 +108,21 @@ public class Proyecto_Dia1{
 
         
         int opcionMenu=Menu();
+        
         Boolean finalizar=false ;
         
         while (finalizar==false){
 
             switch (opcionMenu) {
-                case 1:
-                // Se llama al metodo para mostrar los productos
+                case 1 -> {
+                    // Se llama al metodo para mostrar los productos
                 
                     Mostrar_productos(lista);
                     System.out.println("");
                     opcionMenu=Menu();
-                    break;
+                }
                     
-                case 2:
+                case 2 -> {
                     Mostrar_productos(lista);
                     System.out.println("Ingrese el numero del producto que desea actualizar");
                     int productoActualizar=scan.nextInt();
@@ -129,31 +130,31 @@ public class Proyecto_Dia1{
                     System.out.println("¿Que desea actualizar?\n1. Nombre\n2. Valor\n3. Cantidad\nEscriba el numero de la opcion que desee");
                     int opcionActualizar=scan.nextInt();
                     scan.nextLine();
-
-                    if (opcionActualizar==1) {
-                        System.out.println("Ingrese el nuevo nombre del producto");
-                        String nuevoNombre=scan.nextLine();
-                        Actualizar_nombre(lista, productoActualizar, nuevoNombre);
-                    } 
-                    else if (opcionActualizar==2) {
-                        System.out.println("Ingrese el nuevo valor del producto");
-                        String nuevoValor=scan.nextLine();
-                        Actualizar_valor(lista, productoActualizar, nuevoValor);
-                    }
-                    else if (opcionActualizar==3) {
-                        System.out.println("Ingrese La nueva cantidad del producto");
-                        String nuevaCantidad=scan.nextLine();
-                        Actualizar_cantidad(lista, productoActualizar, nuevaCantidad);
-                    }
-                    else {
-                        System.out.println("Opcion invalida");
+                    
+                    switch (opcionActualizar) {
+                        case 1 -> {
+                            System.out.println("Ingrese el nuevo nombre del producto");
+                            String nuevoNombre=scan.nextLine();
+                            Actualizar_nombre(lista, productoActualizar, nuevoNombre);
+                        }
+                        case 2 -> {
+                            System.out.println("Ingrese el nuevo valor del producto");
+                            String nuevoValor=scan.nextLine();
+                            Actualizar_valor(lista, productoActualizar, nuevoValor);
+                        }
+                        case 3 -> {
+                            System.out.println("Ingrese La nueva cantidad del producto");
+                            String nuevaCantidad=scan.nextLine();
+                            Actualizar_cantidad(lista, productoActualizar, nuevaCantidad);
+                        }
+                        default -> System.out.println("Opcion invalida");
                     }
                     opcionMenu=Menu();
-                    
-                    break;
-                    
-                case 3:
+                }
 
+
+                    
+                case 3 -> {
                     System.out.println("Ingrese el nombre del nuevo producto");
                     String nuevoProductoNombre=scan.nextLine();
 
@@ -171,20 +172,17 @@ public class Proyecto_Dia1{
                     System.out.println("Producto agregado con exito");
                                 
                     opcionMenu=Menu();
-                    break;
+                }
                     
-                case 4:
+                case 4 -> {
                     System.out.println("Ingresa el numero del producto que deseas eliminar");
                     int opcionProductoEliminar=scan.nextInt();
                     lista.remove(opcionProductoEliminar-1);
                     System.out.println("Producto eliminado con exito");
                     opcionMenu=Menu();
-                    break;
+                }
                     
-                case 5:
-                    
-                    finalizar=true;
-                    break;
+                case 5 -> finalizar=true;
 
             }
             
