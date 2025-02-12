@@ -585,9 +585,10 @@ public class ModulosCoordinador {
         
         Scanner scan=new Scanner(System.in);
         
-        System.out.println("-----Tipos de usuarios-----\n1. Campers\n2.Trainers\n3Coordinadores");
+        System.out.println("-----Tipos de usuarios-----\n1. Campers\n2. Trainers\n3. Coordinadores");
                     System.out.println("Ingrese el numero del tipo de usuario que quiere ver\n");
                     int opcCrearUSer=scan.nextInt();
+                    scan.nextLine();
                     
                     switch (opcCrearUSer) {
                         case 1:
@@ -743,7 +744,7 @@ public class ModulosCoordinador {
         
     }
     
-    public static void EliminarCamper(ArrayList<Camper> listaCampers){
+    public static ArrayList<Camper> EliminarCamper(ArrayList<Camper> listaCampers){
         
         Scanner scan =new Scanner(System.in);
         
@@ -758,8 +759,45 @@ public class ModulosCoordinador {
                 listaNueva.add(listaCampers.get(i));
             }
         }
-        listaCampers=listaNueva;
+        return listaNueva;        
+    }
+    
+    
+    public static ArrayList<Trainer> EliminarTrainer(ArrayList<Trainer> listaTrainers){
         
+        Scanner scan =new Scanner(System.in);
+        
+        Modulos.mostrarTrainers(listaTrainers);
+        
+        System.out.println("Ingresa el id del trainer que desees eliminar");
+        int trainerEliminar=scan.nextInt();
+        ArrayList<Trainer> listaNueva=new ArrayList<>();
+        
+        for (int i = 0; i < listaTrainers.size(); i++) {
+            if(listaTrainers.get(i).id!=trainerEliminar){
+                listaNueva.add(listaTrainers.get(i));
+            }
+        }
+        return listaNueva;        
+    }
+   
+   
+    public static ArrayList<Coordinador> EliminarCoordinador(ArrayList<Coordinador> listaCoordinador){
+        
+        Scanner scan =new Scanner(System.in);
+        
+        Modulos.mostrarCoordinadores(listaCoordinador);
+        
+        System.out.println("Ingresa el id del trainer que desees eliminar");
+        int cordinadorEliminar=scan.nextInt();
+        ArrayList<Coordinador> listaNueva=new ArrayList<>();
+        
+        for (int i = 0; i < listaCoordinador.size(); i++) {
+            if(listaCoordinador.get(i).id!=cordinadorEliminar){
+                listaNueva.add(listaCoordinador.get(i));
+            }
+        }
+        return listaNueva;        
     }
 }
 

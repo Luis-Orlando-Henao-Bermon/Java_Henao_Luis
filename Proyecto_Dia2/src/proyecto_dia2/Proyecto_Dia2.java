@@ -92,7 +92,8 @@ public class Proyecto_Dia2 {
                         case 3:
                             Modulos.mostrarCoordinadores(listaCoordinador);
                             break;
-                        default:
+                        default: 
+                        System.out.println("Opcion invalida\n");
                             break;
                     }
 
@@ -103,24 +104,25 @@ public class Proyecto_Dia2 {
                     break;
                 case 4:
                     
-                    System.out.println("-----Tipos de usuarios-----\n1. Campers\n2 .Trainers\n3. Coordinadores");
-                    System.out.println("Ingrese el numero del tipo de usuario que quiere ver\n");
+                    System.out.println("-----Tipos de usuarios-----\n1. Campers\n2. Trainers\n3. Coordinadores");
+                    System.out.println("Ingrese el numero del tipo de usuario que quiere eliminar\n");
                     int opcEliminarUser=scan.nextInt();
                     scan.nextLine();
                     
                     switch (opcEliminarUser) {
                         case 1:
-                            ModulosCoordinador.EliminarCamper(listaCampers);
+                            listaCampers=ModulosCoordinador.EliminarCamper(listaCampers);
                             break;
                             
                         case 2:
-                            Modulos.mostrarTrainers(listaTrainers);
+                            listaTrainers=ModulosCoordinador.EliminarTrainer(listaTrainers);
                             break;
                             
                         case 3:
-                            Modulos.mostrarCoordinadores(listaCoordinador);
+                            listaCoordinador=ModulosCoordinador.EliminarCoordinador(listaCoordinador);
                             break;
                         default:
+                        System.out.println("Opcion invalida");
                             break;
                     }
 
