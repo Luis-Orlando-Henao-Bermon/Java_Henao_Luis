@@ -60,18 +60,14 @@ public class Menus {
             """);
     }
 
-    public static void menuCoordinador(String nombre) {
+    public static void menuCoordinador() {
         System.out.println("//////////////////////////////////////////////////////////////////////");
-        System.out.println("    ---------------- Bienvenido " + nombre + " ----------------------------");
-        System.out.println("          1). Cambiar contraseñas de todo el sistema educativo.");
-        System.out.println("          2). Cambiar información de todo el sistema educativo.");
-        System.out.println("          3). Agregar nota de examen de aprobación.");
-        System.out.println("          4). Agregar nota de filtro.");
-        System.out.println("          5). Consultar cuáles campers se encuentran en riesgo alto.");
-        System.out.println("          6). Reporte.");
-        System.out.println("          7). Crear nuevas rutas.");
-        System.out.println("          8). Crear nuevos campers.");
-        System.out.println("          9). Salir.");
+        System.out.println("    ---------------- Bienvenido  ----------------------------");
+        System.out.println("          1). Cambiar información de todo el sistema educativo.");
+        System.out.println("          2). Ver Informacion de usuarios"); 
+        System.out.println("          3). Crear nuevos usuarios.");
+        System.out.println("          4). Eliminar usuarios.");
+        System.out.println("          5). Salir.");
         System.out.println("    -----------------------------------------------------------------------");
         System.out.println("    ///////////////////////////////////////////////////////////////////////");
     }
