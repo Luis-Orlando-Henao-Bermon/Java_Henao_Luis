@@ -2,7 +2,6 @@
 package proyecto_dia3;
 
 import java.util.ArrayList;
-import java.util.Map;
 import javax.swing.JOptionPane;
 
 
@@ -66,7 +65,6 @@ public class Proyecto_Dia3 {
                    
                 case 5:
                    listaTickets=Modulos.CancelarTicket(listaTickets);
-                   JOptionPane.showMessageDialog(null,Modulos.ListarTickets(listaTickets));
 
                    break;
                 case 6:
