@@ -9,7 +9,7 @@ public class Dia3 {
 
     
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);  
         
         int n=0;
         int n2=0;
@@ -41,11 +41,11 @@ public class Dia3 {
                     }
                     System.out.println(" ");
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
                     break;
 
-                case 2:  
+                case 2:     
                     System.out.println("Ingresa el numero n");
                     n=scan.nextInt(); 
                     scan.nextLine();
@@ -56,7 +56,7 @@ public class Dia3 {
                     }
                     System.out.println(" ");
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
                     break;
                 case 3:  
@@ -70,7 +70,7 @@ public class Dia3 {
                         System.out.println(""+n+" * "+(i+1)+" = "+n*(i+1));
                     }
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -85,7 +85,7 @@ public class Dia3 {
                         System.out.println(""+n+" * "+(i)+" = "+n*(i));
                     }
                     
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
                     
                     break;
@@ -98,7 +98,7 @@ public class Dia3 {
                     }
                     System.out.println(" ");
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -111,7 +111,7 @@ public class Dia3 {
                     }
                     System.out.println(" ");
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -124,7 +124,7 @@ public class Dia3 {
                     }
                     System.out.println(" ");
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -137,7 +137,7 @@ public class Dia3 {
                     }
                     System.out.println(" ");
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -154,7 +154,7 @@ public class Dia3 {
                     }
                     System.out.println("La suma es: "+suma);
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -172,7 +172,7 @@ public class Dia3 {
                     }
                     System.out.println("La suma es: "+suma);
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -190,7 +190,7 @@ public class Dia3 {
                     }
                     System.out.println("La suma es: "+suma);
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -202,7 +202,7 @@ public class Dia3 {
                         System.out.println("Caracter: \""+i+"\", Codigo ASCII:"+ (int) i);
                     }
                 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -221,7 +221,7 @@ public class Dia3 {
                     }
                     System.out.println("El factorial de "+n+" es: "+factorial);
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -242,7 +242,7 @@ public class Dia3 {
                     }
                     System.out.println(potencia);
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -262,7 +262,7 @@ public class Dia3 {
                     }
 
                     System.out.println( "El numero invertido es: "+invertido);
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -283,7 +283,7 @@ public class Dia3 {
 
                     System.out.println("La suma de los digitos es: "+suma);
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -309,7 +309,7 @@ public class Dia3 {
                         System.out.println("El numero no es primo");
                     }
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -333,7 +333,7 @@ public class Dia3 {
                     }
                     System.out.println("El MCD de "+ n +" y "+n2+" es: "+a);
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -372,7 +372,7 @@ public class Dia3 {
                     System.out.println("La cantidad de numeros negativos ingesados es: "+nNegativos);
                     System.out.println("La cantidad de numeros cero ingesados es: "+nCeros);
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -395,7 +395,7 @@ public class Dia3 {
                     scan.nextLine();
                     System.out.println("El numero mayor es: "+Collections.max(listaNumerosMN));
                     System.out.println("El numero menor es: "+Collections.min(listaNumerosMN));
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -419,7 +419,7 @@ public class Dia3 {
                     System.out.println(" ");
                     System.out.println("La suma de los numeros divisibles por 9 entre 100 y 200 es: " +suma);
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -445,7 +445,7 @@ public class Dia3 {
                     System.out.println("El numero binario "+s+" en decimal es: "+suma);
 
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -471,7 +471,7 @@ public class Dia3 {
                     }else System.out.println("El numero "+fuerte+" no es un numero fuerte");
                     
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -484,7 +484,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+hexADec+" en decimal es: "+Integer.parseInt(hexADec, 16));
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -498,7 +498,7 @@ public class Dia3 {
                     System.out.println("El numero "+hexAOct+" en octal es: "+Integer.toOctalString(Integer.parseInt(hexAOct, 16)));
 
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -511,7 +511,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+hexABin+" en binario es: "+Integer.toBinaryString(Integer.parseInt(hexABin, 16)));
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -525,7 +525,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+decAHex+" en hexadecimal es: " +Integer.toHexString(decAHex).toUpperCase());
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -539,7 +539,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+decAOct+" en octal es: " +Integer.toOctalString(decAOct));
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -553,7 +553,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+decABin+" en binario es: " +Integer.toBinaryString(decABin));
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -567,7 +567,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+binAOct+" en octal es: "+Integer.toOctalString(Integer.parseInt(binAOct,2)));
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -581,7 +581,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+binADec+" en decimal es: "+Integer.parseInt(binADec,2));
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -595,7 +595,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+binAHex+" en hexadecimal es: "+Integer.toHexString(Integer.parseInt(binAHex,2)).toUpperCase());
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -609,7 +609,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+octABin+" en binario es: "+Integer.toBinaryString(Integer.parseInt(octABin,8)));
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -623,7 +623,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+octADec+" en decimal es: "+Integer.parseInt(octADec,8));
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -637,7 +637,7 @@ public class Dia3 {
 
                     System.out.println("El numero "+octAHex+" en hexadecimal es: "+Integer.toHexString(Integer.parseInt(octAHex,8)).toUpperCase());
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -651,7 +651,7 @@ public class Dia3 {
 
                     System.out.println("El complemento a 1 es: "+~n);
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -676,7 +676,7 @@ public class Dia3 {
                     System.out.println("El complemento a 2 es: "+complemetoBA2);
 
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -701,7 +701,7 @@ public class Dia3 {
                         System.out.print(" "+suma);
                     }
                     System.out.println(" ");
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -726,7 +726,7 @@ public class Dia3 {
                         System.out.println("El numero "+fuerte2+" es un numero fuerte");
                     }else System.out.println("El numero "+fuerte2+" no es un numero fuerte");
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -742,7 +742,7 @@ public class Dia3 {
                         }
                     }
                     System.out.println(" ");
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -759,7 +759,7 @@ public class Dia3 {
                     }
 
                     System.out.println(" ");
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -773,7 +773,7 @@ public class Dia3 {
 
                     System.out.println(verificarNPerfecto(n)?"Es un numero perfecto":"No es un numero perfecto");
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -787,7 +787,7 @@ public class Dia3 {
                         }
                     }
                     System.out.println();
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -800,7 +800,7 @@ public class Dia3 {
 
                     System.out.println((VerificarNArsmstrong(nVerificarArsm)?"El numero pertenece a los Números de Armstrong":"El numero no pertenece a los Números de Armstrong"));
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
@@ -820,7 +820,7 @@ public class Dia3 {
                     }
                     System.out.println();
 
-                    System.out.println("preciona enter para continuar");
+                    System.out.println("presiona enter para continuar");
                     scan.nextLine();
 
                     break;
