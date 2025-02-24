@@ -2,7 +2,7 @@
 package dia6;
 
 public class CuentaBancaria {
-    /*private String numeroCuenta;
+    private String numeroCuenta;
     private double saldo;
 
     public CuentaBancaria() {
@@ -47,5 +47,5 @@ public class CuentaBancaria {
         else{
             System.out.println("Por favor ingresa una cantidad positiva");
         }
-    }*/
+    }
 }
