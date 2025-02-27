@@ -4,6 +4,11 @@ package dia_8;
 public class PartidoPlayOffs extends Partido{
     private String ronda;
 
+    public PartidoPlayOffs(String ronda, String equipoLocal, String equipoVisitante, int cestasEquipoLocal, int cestasEquipoVisitante, String fechaPartido) {
+        super(equipoLocal, equipoVisitante, cestasEquipoLocal, cestasEquipoVisitante, fechaPartido);
+        this.ronda = ronda;
+    }
+    
     public PartidoPlayOffs(String ronda, String equipoLocal, String equipoVisitante, String fechaPartido) {
         super(equipoLocal, equipoVisitante, fechaPartido);
         this.ronda = ronda;

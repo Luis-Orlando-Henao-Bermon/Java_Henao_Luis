@@ -9,6 +9,15 @@ public class Partido {
     private boolean finalizado;
     private String fechaPartido;
 
+    public Partido(String equipoLocal, String equipoVisitante, int cestasEquipoLocal, int cestasEquipoVisitante, String fechaPartido) {
+        this.equipoLocal = equipoLocal;
+        this.equipoVisitante = equipoVisitante;
+        this.cestasEquipoLocal = cestasEquipoLocal;
+        this.cestasEquipoVisitante = cestasEquipoVisitante;
+        finalizado=false;
+        this.fechaPartido = fechaPartido;
+    }
+        
     public Partido(String equipoLocal, String equipoVisitante, String fechaPartido) {
         this.equipoLocal = equipoLocal;
         this.equipoVisitante = equipoVisitante;
@@ -22,7 +31,7 @@ public class Partido {
     }
     
     public void obtenerInformacion(){
-        System.out.println("Equipo local: "+equipoLocal+"\nEquipo visitante: "+equipoVisitante+"\nCestas del equipo local: "+cestasEquipoVisitante);
+        System.out.println("Equipo local: "+equipoLocal+"\nEquipo visitante: "+equipoVisitante+"\nCestas del equipo local: "+cestasEquipoLocal);
         System.out.println("Cestas del equipo visitante: "+cestasEquipoVisitante);
         if (finalizado==true) {
             System.out.println("Estado del partido: Finalizado");
@@ -80,13 +89,13 @@ public class Partido {
     
     public void MostrarGanador(){
         
-        if (cestasEquipoLocal>cestasEquipoVisitante) {
-            System.out.println("El equipo ganador es: "+cestasEquipoLocal);
+        if (cestasEquipoLocal>cestasEquipoVisitante && finalizado==true) {
+            System.out.println("El equipo ganador es: "+equipoLocal);
         }
-        else if(cestasEquipoLocal==cestasEquipoVisitante){
+        else if(cestasEquipoLocal==cestasEquipoVisitante|| finalizado==false){
             System.out.println("El partido no a terminado ya que ambos equipos estan empatados");
         }
-        else System.out.println("El equipo ganador es: "+cestasEquipoVisitante);
+        else System.out.println("El equipo ganador es: "+equipoVisitante);
         
     }
     public void SumarPuntoEquipoLocal(){

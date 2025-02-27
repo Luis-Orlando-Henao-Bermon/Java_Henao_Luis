@@ -4,6 +4,13 @@ package dia_8;
 public class PartidoDeLiga extends Partido{
     private int numeroJornada;
 
+    public PartidoDeLiga(int numeroJornada, String equipoLocal, String equipoVisitante, int cestasEquipoLocal, int cestasEquipoVisitante, String fechaPartido) {
+        super(equipoLocal, equipoVisitante, cestasEquipoLocal, cestasEquipoVisitante, fechaPartido);
+        this.numeroJornada = numeroJornada;
+    }
+
+    
+    
     public PartidoDeLiga(int numeroJornada, String equipoLocal, String equipoVisitante, String fechaPartido) {
         super(equipoLocal, equipoVisitante, fechaPartido);
         this.numeroJornada = numeroJornada;
