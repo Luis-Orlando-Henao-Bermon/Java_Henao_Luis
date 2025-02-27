@@ -50,6 +50,62 @@ public class Dia_8 {
             System.out.println("\n------------");
             
         }
+        
+        // Añade el elemento al ArrayList
+        nombreArrayList.add("Elemento");
+
+        // Añade el elemento al ArrayList en la posición 'n'
+        nombreArrayList.add(5, "Elemento 2");
+
+        // Devuelve el número de elementos del ArrayList
+        nombreArrayList.size();
+
+        // Devuelve el elemento que está en la posición '2' del ArrayList
+        nombreArrayList.get(2);
+
+        // Comprueba si existe el elemento ('Elemento') que se le pasa como parámetro
+        nombreArrayList.contains("Elemento");
+
+        // Devuelve la posición de la primera ocurrencia ('Elemento') en el ArrayList
+        nombreArrayList.indexOf("Elemento");
+
+        // Devuelve la posición de la última ocurrencia ('Elemento') en el ArrayList
+        nombreArrayList.lastIndexOf("Elemento");
+
+        // Borra el elemento de la posición '5' del ArrayList
+        nombreArrayList.remove(5);
+
+        // Borra la primera ocurrencia del 'Elemento' que se le pasa como parámetro.
+        nombreArrayList.remove("Elemento");
+
+        // Borra todos los elementos de ArrayList
+        nombreArrayList.clear();
+
+        // Devuelve True si el ArrayList está vacío. Sino devuelve False
+        nombreArrayList.isEmpty();
+        
+        
+        // Borra la primera ocurrencia del 'Elemento' que se le pasa como parámetro.
+        nombreArrayList.remove("Elemento");
+
+        // Borra todos los elementos de ArrayList
+        nombreArrayList.clear();
+
+        // Devuelve True si el ArrayList está vacío. Sino devuelve False
+        nombreArrayList.isEmpty();
+
+        // Copiar un ArrayList
+        ArrayList arrayListCopia = (ArrayList) nombreArrayList.clone();
+
+        // Pasa el ArrayList a un Array
+        Object[] array = nombreArrayList.toArray();
+        
+        */
+        
+        /*Object[][] hola=new Object[2][2];
+        
+        hola[0][0]=1;
+        hola[0][1]="Hola";
         */
         ArrayList<Partido> listaPartidos=new ArrayList<>();
         PartidoDeLiga partido1 = new PartidoDeLiga(1, "Los Angeles Lakers", "Boston Celtics",15,20, "2025-02-26");
