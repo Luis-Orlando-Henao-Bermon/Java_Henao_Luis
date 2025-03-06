@@ -3,22 +3,15 @@ package Ejercicio4;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NotificarPorMail {
+public class NotificarPorMail implements Notificacion{
     private static NotificarPorMail instance;
 
     private NotificarPorMail() {
     }
-
-    public static NotificarPorMail getInstance() {
-        if (instance == null) {
-            instance = new NotificarPorMail();
-        }
-        return instance;
-    }
-
-    public List<Orden> ordenes = new ArrayList<Orden>();
-
+    
+    @Override
     public void enviarMensajeDeConfirmacion(Orden orden) {
         ordenes.add(orden);
+        System.out.println("Email enviado");
     }
 }

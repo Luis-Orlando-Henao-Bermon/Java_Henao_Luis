@@ -2,7 +2,7 @@
 package dia_13;
 
 public class Dia_13 {
-
+    
     public static void main(String[] args) {
         /*
         ## 1. Principios SOLID
