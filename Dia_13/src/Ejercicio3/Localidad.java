@@ -1,4 +1,9 @@
 package Ejercicio3;
 
-public class Localidad {
+
+public enum Localidad {
+    NONE,
+    BAHIA_BLANCA,
+    TRES_ARROYOS
 }
+
