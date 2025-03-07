@@ -53,14 +53,15 @@ public class main {
 
         // Uso
         
-            public static void main(String[] args) {
-                Computadora pc = new Computadora.Builder()
-                    .setProcesador("Intel i7")
-                    .setTarjetaGrafica(true)
-                    .build();
+        public static void main(String[] args) {
+            Computadora pc = new Computadora.Builder()
+                .setProcesador("Intel i7")
+                .setRam(16)
+                .setTarjetaGrafica(true)
+                .build();
 
-                pc.mostrarConfiguracion();
-            }
+            pc.mostrarConfiguracion();
+        }
         
     }
 }
