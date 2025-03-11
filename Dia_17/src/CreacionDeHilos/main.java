@@ -18,6 +18,7 @@ public class main {
 
         @Override
         public void run() {
+
             System.out.println("Executing thread " + Thread.currentThread().getName());
         }
 
@@ -26,7 +27,28 @@ public class main {
     public static class MyRunnable implements Runnable {
 
         public void run() {
-            System.out.println("Executing thread " + Thread.currentThread().getName());
+            for (int i = 0; i < 5; i++) {
+                System.out.println(i+1 +". Hola desde el hilo id:" + Thread.currentThread().getId());
+                try {
+                    Thread.sleep(3000); // Espera 1 segundo
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public static class MiHilo implements Runnable{
+        @Override
+        public void run() {
+            for (int i = 0; i < 5; i++) {
+                System.out.println(i+1 +". Hola desde el hilo id:" + Thread.currentThread().getId());
+                try {
+                    Thread.sleep(3000); // Espera 1 segundo
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
     public static void main(String[] args) throws InterruptedException {
@@ -39,6 +61,9 @@ public class main {
         //Ejemplo creación de hilo extendiendo de Runnable.
         Thread myThread2 = new Thread(new MyRunnable(), "myRunnable");
         myThread2.start();
+
+        Thread miHilo=new Thread(new MiHilo(),"Hilo1");
+        miHilo.start();
         
     }
 }
