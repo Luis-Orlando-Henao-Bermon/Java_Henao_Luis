@@ -23,7 +23,7 @@ public class main {
             for (int i = 0; i < 5; i++) {
                 System.out.println(i+1 +". Hola desde el hilo id:" + Thread.currentThread().getId());
                 try {
-                    Thread.sleep(3000); // Espera 1 segundo
+                    Thread.sleep(3000); // Espera 3 segundos
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -37,7 +37,7 @@ public class main {
             for (int i = 0; i < 5; i++) {
                 System.out.println(i+1 +". Hola desde el hilo id:" + Thread.currentThread().getId());
                 try {
-                    Thread.sleep(3000); // Espera 1 segundo
+                    Thread.sleep(3000); // Espera 3 segundos
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
