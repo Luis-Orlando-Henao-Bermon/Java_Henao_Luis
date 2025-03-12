@@ -13,7 +13,7 @@ public class Carrera {
         deportista2.start();
         deportista3.start();
         deportista4.start();
-        
+                
     }
             
 }
