@@ -8,14 +8,40 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-
+    
 
 public class Dia_19 {
+    private static final String nombre_archivo = "./src/dia_19/data.txt";
+
+        //Metodo para guardar
+        public static void guardarDatos(String contenido){
+            try(FileWriter guardar = new FileWriter(nombre_archivo)){
+                guardar.write(contenido);
+                System.out.println("Datos fueron guardados de manera correcta!");
+            } catch (IOException e) {
+                System.out.println("Error al momento de guardar: " + e.getMessage());
+            }
+        }
+
+        //Metodo para leer
+    public static void leerDatos(){
+        try(BufferedReader lector = new BufferedReader(new FileReader(nombre_archivo))){
+            String linea;
+            System.out.println("Contenido del archivo:");
+            while((linea = lector.readLine()) != null){
+                System.out.println(linea);
+            }
+        } catch(IOException e){
+            System.out.println("Error al momento de importar el archivo: " + e.getMessage());
+        }
+    }
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
+        guardarDatos("holaaa como estan");
+        leerDatos();
         
-        //leer un archivo
+        /*//leer un archivo
         javax.swing.JFileChooser j = new javax.swing.JFileChooser();
         j.showOpenDialog(j);
         String path = j.getSelectedFile().getAbsolutePath();
@@ -43,10 +69,13 @@ public class Dia_19 {
         }
         
         //borrado de un archivo
-        j.showOpenDialog(j);
-        String path2 = j.getSelectedFile().getAbsolutePath();
-        File archivoB = new File(path2);
-        archivoB.delete();
+        // j.showOpenDialog(j);
+        // String path2 = j.getSelectedFile().getAbsolutePath();
+        // File archivoB = new File(path2);
+        // archivoB.delete();*/
+        
+        
+
     }
     
 }
