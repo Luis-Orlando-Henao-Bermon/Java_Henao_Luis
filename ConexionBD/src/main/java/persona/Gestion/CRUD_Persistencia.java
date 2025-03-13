@@ -1,9 +1,13 @@
 package persona.Gestion;
 
+import persona.Conexion.Conexion;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -13,7 +17,32 @@ public class CRUD_Persistencia {
     private static List<Persona> personas = new ArrayList<>();
 
     // Cargar datos desde el archivo
+
+    public static void IniciarBD(){
+        PreparedStatement ps;
+        Connection con = Conexion.getConexion();
+        var sql="create table if not exists persona( " +
+                "id int not null auto_increment primary key, " +
+                "nombre varchar(100), " +
+                "edad int " +
+                ") ";
+        try {
+            ps = con.prepareStatement(sql);
+            ps.execute();
+        }catch (Exception e){
+            System.out.println("Error al crear la tabla de persona" + e.getMessage());
+        }
+        finally {
+            try {
+                con.close();
+            }catch (Exception e){
+                System.out.println("Error al cerrar conexion: "+e.getMessage());
+            }
+        }
+    }
+
     public static void cargarDatos(List<Persona> personas) {
+
         IPersonaDAO metodos = new PersonaBD();
         metodos.listaPersonas(personas);
     }
@@ -52,6 +81,7 @@ public class CRUD_Persistencia {
 
 
     public static void main(String[] args) {
+        IniciarBD();
 
         Scanner sc = new Scanner(System.in);
         int opcion;
