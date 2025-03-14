@@ -10,7 +10,7 @@ public class Conexion {
     private static final String urlBase ="jdbc:mysql://localhost:3306/";
     private static final String urlComplet ="jdbc:mysql://localhost:3306/"+baseDatos;
     private static final String usuario="root";
-    private static final String password="admin";
+    private static final String password="campus2023";
 
     public static void crearBaseDatos() {
         try (Connection con = DriverManager.getConnection(urlBase, usuario, password);
