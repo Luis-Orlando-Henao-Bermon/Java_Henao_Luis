@@ -12,7 +12,7 @@ public class main {
 
         //usuarioDao.bucarPersonaPorId(1);
         //usuarioDao.modificarPersona(1,"Pedro","Pedrito@gmial.com");
-        //usuarioDao.bucarPersonaPorId(1);
+        usuarioDao.bucarPersonaPorId(5);
 
         //usuarioDao.EliminarPersona(2);
 
