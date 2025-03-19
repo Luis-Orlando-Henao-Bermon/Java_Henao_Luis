@@ -201,6 +201,7 @@ public class Vista extends javax.swing.JFrame {
     public static void main(String args[]) {
         Vista vista = new Vista();
         Controlador c = new Controlador(vista);
+        vista.setTitle("Control de usuarios");
         vista.setVisible(true);
         vista.setLocationRelativeTo(vista);
     }
