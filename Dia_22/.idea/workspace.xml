@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="034cffa6-e603-46fc-b969-53a12f40cdda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Dia_21/src/main/java/org/example/Normalito/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Dia_21/src/main/java/org/example/Normalito/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dia_19/build/classes/dia_19/Conexion/Conexion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dia_22/MVC/Vista/Vista.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/dia_22/MVC/Vista/Vista.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dia_22/MVC/Vista/Vista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dia_22/MVC/Vista/Vista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2uUtYax10wPwjvv16AKA5X0nMok" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,7 +34,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/COMPUMAX/OneDrive/Documentos/Luis Henao/Java_Henao_Luis/Dia_22",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager">
